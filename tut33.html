@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After psedu selectors</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+        }
+
+        .navigation {
+            display: flex;
+            flex-direction: row;
+        }
+
+        li {
+            list-style: none;
+            padding: 34px 23px;
+        }
+
+        /* header{
+            display: flex;
+            flex-direction: row;
+        } */
+        section::before {
+            color: white;
+            content: This is section;
+        }
+
+        section {
+            border: 2px solid red;
+            text-align: center;
+            margin: 64px 237px;
+            padding: 51px 31px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        p {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About us</li>
+                <li class="item">Services</li>
+                <li class="item">Contact us</li>
+            </ul>
+        </nav>
+        <section>
+            <h1>This is a header</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur commodi libero repudiandae ea,
+                itaque quos! Necessitatibus accusantium dolor cum voluptates corrupti vero perferendis! Reprehenderit
+                dolore laudantium delectus dolorem odit ut quisquam. Distinctio, reprehenderit quaerat!</p>
+        </section>
+    </header>
+</body>
+
+</html>

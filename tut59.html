@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .conatainer{
+            font-size: 23px;
+            font-weight: bold;
+            background-color: antiquewhite;
+            border: 2px solid grey;
+            padding: 34px;
+            margin: 4px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="conatainer">
+        <!-- This is a container -->
+        current time is <span id = "time"></span>
+    </div>
+    <script>
+        console.log("This is date and time tutorial");
+        let now = new Date();
+        console.log(now);
+
+        let dt = new Date(1000);
+        console.log(dt);
+
+        let newdate = new Date("2029-09-30");
+        console.log(newdate);
+
+        let nd = new Date(3020,4,6,9,3,2,34);
+        console.log(nd);
+
+        let yr = newdate.getDate();
+        console.log(yr);
+
+        let mon = newdate.getMonth();
+        console.log(mon);
+
+        newdate.setDate(31);
+        console.log(newdate);
+
+        setInterval(updateTime,1000);
+        function updateTime(){
+            time.innerHTML = new Date();
+        }
+    </script>
+</body>
+</html>

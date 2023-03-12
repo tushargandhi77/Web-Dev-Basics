@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo selectors and more desining</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: aqua;
+        }
+        .container{
+            border: 2px solid red;
+            background-color: antiquewhite;
+            padding: 34px;
+            margin: 34px auto;
+            width: 666px;
+        }
+        a:hover{
+            color: black;
+            background-color: aquamarine;
+        }
+        button:hover{
+            color: black;
+            background-color: aquamarine;
+        }
+        /* a:visited{
+            color: yellow; 
+        }  */
+        .btn{
+            font-weight: bold;
+            background-color: white;
+            padding: 6px;
+            border: none;
+            cursor: pointer;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+    <div id="cont1" class="container">
+        <h3>This is my heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente necessitatibus, dicta commodi quis sunt culpa nihil eveniet, perspiciatis quia dolores consequuntur repudiandae voluptatibus! Et fugiat quidem consequatur totam, iste ad vitae praesentium dolores laudantium.</p>
+        <a href="" class="btn">Read more</a>
+        <button class="btn">Contact us</button>
+    </div>
+</body>
+</html>

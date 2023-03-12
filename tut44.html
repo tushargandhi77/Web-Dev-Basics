@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSs Grid</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section aside';
+        }
+        .Item{
+            background-color: yellow;
+            border: 3px solid black;
+        }
+        #navbar{
+            grid-area: navbar;
+        }
+        #section{
+            grid-area: section;
+        }
+        #aside{
+            grid-area: aside;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="navbar" class="Item">
+            HOme About Contact Us
+        </div>
+        <div id="section" class="Item">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam deleniti minima suscipit magnam placeat doloremque dicta, facere a voluptatibus cum tenetur assumenda provident in reiciendis repudiandae facilis sequi officiis dolorem earum reprehenderit molestias consequatur?
+        </div>
+        <div id="aside" class="Item">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit, repudiandae porro. Esse debitis temporibus corporis impedit, odio laborum modi officia!
+        </div>
+        <!-- <div class="Item">Item-1</div>
+        <div class="Item">Item-2</div>
+        <div class="Item">Item-3</div>
+        <div class="Item">Item-4</div>
+        <div class="Item">Item-5</div>
+        <div class="Item">Item-6</div>
+        <div class="Item">Item-7</div>
+        <div class="Item">Item-8</div>
+        <div class="Item">Item-9</div>
+        <div class="Item">Item-10</div>
+        <div class="Item">Item-11</div>
+        <div class="Item">Item-12</div>
+        <div class="Item">Item-13</div>
+        <div class="Item">Item-14</div> -->
+    </div>
+</body>
+</html>

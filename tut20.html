@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        body{
+            background-color: bisque;
+        }
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container{
+            background-color: antiquewhite;
+            border: 3px solid brown;
+            /* padding: 60px; */
+            /* margin: 34px; */
+
+            /* padding = top right bottom left --- > trbl*/
+            padding-left: 30px;
+            padding-top: 10px;
+            padding-right: 10px;
+
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border-radius: 23px;
+            box-sizing: border-box;
+            width: 533px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>This is my 1st heading</h3>
+        <p id="first">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima dolorem nulla perferendis quo vitae minus aspernatur esse culpa cum eveniet, numquam sit similique magni repudiandae. Consectetur quasi odio, iste alias atque eum provident temporibus.
+        </p>
+    </div>
+    <div class="container">
+        <h3>This is my 2nd heading</h3>
+        <p id="second">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima dolorem nulla perferendis quo vitae minus aspernatur esse culpa cum eveniet, numquam sit similique magni repudiandae. Consectetur quasi odio, iste alias atque eum provident temporibus.
+        </p>
+    </div>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="third">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima dolorem nulla perferendis quo vitae minus aspernatur esse culpa cum eveniet, numquam sit similique magni repudiandae. Consectetur quasi odio, iste alias atque eum provident temporibus.
+        </p>
+    </div>
+
+</body>
+</html>
